@@ -1,0 +1,16 @@
+# Virtual Environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables (API keys, etc.)
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data folders (to keep your repo light/secure)
+data/raw/
+data/processed/
