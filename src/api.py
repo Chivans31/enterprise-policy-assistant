@@ -69,3 +69,15 @@ def ask_stream(request: QueryRequest):
         generate(),
         media_type="text/event-stream"
     )
+import os
+
+if __name__ == "__main__":
+    import uvicorn
+
+    port = int(os.environ.get("PORT", 8000))
+
+    uvicorn.run(
+        "src.api:app",
+        host="0.0.0.0",
+        port=port
+    )
